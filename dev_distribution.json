@@ -1,0 +1,45 @@
+{
+  "version": "2.0.1",
+  "rss": "<LINK TO RSS FEED>",
+  "discord": {
+    "clientId": "<FILL IN OR REMOVE DISCORD OBJECT>",
+    "smallImageText": "<FILL IN OR REMOVE DISCORD OBJECT>",
+    "smallImageKey": "<FILL IN OR REMOVE DISCORD OBJECT>"
+  },
+  "servers": [
+    {
+      "id": "SunRPMain-1.12.2",
+      "name": "SuncraCraft RP - Main",
+      "description": "SuncraCraft Minecraft RP Server Running Minecraft 1.12.2",
+      "icon": null,
+      "version": "1.0.0",
+      "address": "nitropvp.com",
+      "minecraftVersion": "1.12.2",
+      "discord": {
+        "shortId": "<FILL IN OR REMOVE DISCORD OBJECT>",
+        "largeImageText": "<FILL IN OR REMOVE DISCORD OBJECT>",
+        "largeImageKey": "<FILL IN OR REMOVE DISCORD OBJECT>"
+      },
+      "mainServer": true,
+      "autoconnect": true,
+      "modules": []
+    },
+    {
+      "id": "betasub-1.16.3",
+      "name": "Beta Suncracker0 Sub Club Server",
+      "description": "Beta Sun Sub Server Running Minecraft 1.16.3",
+      "icon": null,
+      "version": "1.0.0",
+      "address": "thisisatestsmile.apexmc.co",
+      "minecraftVersion": "1.16.3",
+      "discord": {
+        "shortId": "<FILL IN OR REMOVE DISCORD OBJECT>",
+        "largeImageText": "<FILL IN OR REMOVE DISCORD OBJECT>",
+        "largeImageKey": "<FILL IN OR REMOVE DISCORD OBJECT>"
+      },
+      "mainServer": false,
+      "autoconnect": true,
+      "modules": []
+    }
+  ]
+}

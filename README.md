@@ -53,9 +53,9 @@ If you download from the [Releases](https://github.com/dscalzi/HeliosLauncher/re
 
 | Platform | File |
 | -------- | ---- |
-| Windows x64 | `Helios-Launcher-setup-VERSION.exe` |
-| macOS | `Helios-Launcher-setup-VERSION.dmg` |
-| Linux x64 | `Helios-Launcher-setup-VERSION.AppImage` |
+| Windows x64 | `helioslauncher-setup-VERSION.exe` |
+| macOS | `helioslauncher-VERSION.dmg` |
+| Linux x64 | `helioslauncher-VERSION-x86_64.AppImage` |
 
 ## Console
 
@@ -75,8 +75,6 @@ If you want to export the console output, simply right click anywhere on the con
 
 
 ## Development
-
-This section details the setup of a basic developmentment environment.
 
 ### Getting Started
 
@@ -139,9 +137,13 @@ Paste the following into `.vscode/launch.json`
       "type": "node",
       "request": "launch",
       "cwd": "${workspaceFolder}",
-      "program": "${workspaceFolder}/node_modules/electron/cli.js",
-      "args" : ["."],
-      "outputCapture": "std"
+      "runtimeExecutable": "${workspaceFolder}/node_modules/.bin/electron",
+      "windows": {
+        "runtimeExecutable": "${workspaceFolder}/node_modules/.bin/electron.cmd"
+      },
+      "args": ["."],
+      "console": "integratedTerminal",
+      "protocol": "inspector"
     },
     {
       "name": "Debug Renderer Process",
